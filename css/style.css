@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #1ed760;
+  --secondary-color: #2941ab;
+  --dark-gray: #919496;
+  --light-gray: #f4f4f4;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  color: var(--light-gray);
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-gray);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--black);
+  padding: 2rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+header figure {
+  width: 15rem;
+}
+
+header nav ul {
+  display: flex;
+  column-gap: 4rem;
+  font-size: 1.6rem;
+}
+
+header .border-right {
+  border-right: solid 2px var(--light-gray);
+  padding-right: 4rem;
+}
+
+header nav.responsive-menu {
+  display: none;
+}
+
+header nav.responsive-menu figure {
+  width: 25px;
+  height: 25px;
+}
+
+section.banner {
+  height: 600px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+
+  background-image: url("../images/bg/main.svg");
+  background-repeat: no-repeat;
+  background-size: 175%;
+  background-position: 46% 4%;
+}
+
+section.banner h1 {
+  font-size: 12rem;
+  line-height: 1.2;
+  letter-spacing: -0.5rem;
+}
+
+section.banner h1 span {
+  display: inline-block;
+  text-indent: 26rem;
+}
+
+section.banner p {
+  font-size: 1.6rem;
+  margin: 4rem 0;
+  text-align: center;
+}
+
+section.banner .cta {
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 100px;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+section.banner .cta:hover,
+section.banner .cta:active {
+  transform: scale(1.05)
+}
+
+footer {
+  background-color: var(--black);
+}
+
+footer ul li a:hover {
+  color: var(--primary-color);
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 6rem 0 4rem 0;
+}
+
+footer figure {
+  width: 15rem;
+}
+
+footer .links {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 2;
+  justify-content: space-evenly;
+}
+
+footer .links a {
+  font-size: 1.5rem;
+  height: 100%;
+  display: block;
+  padding: 1.3rem;
+}
+
+footer .links a.heading {
+  text-transform: uppercase;
+  color: var(--dark-gray);
+  font-weight: 700;
+  font-size: 1.3rem;
+  cursor: text;
+}
+
+footer .social {
+  flex-grow: 1;
+  margin: 1.6rem 0;
+}
+
+footer .social ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social ul li {
+  background-color: rgb(43, 43, 43);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+footer .social ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+footer .location {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10rem 0 1.2rem;
+}
+
+footer .location a {
+  font-size: 1.2rem;
+  color: var(--dark-gray);
+}
+
+footer .location a:last-child {
+  margin-left: 0.8rem;
+}
+
+footer .location a:hover {
+  color: var(--primary-color);
+}
+
+footer .legal {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .legal ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 3rem;
+}
+
+footer .legal ul li a {
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+  margin-right: 2rem;
+}
+
+footer .legal span {
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+}
+
+footer .legal a:hover {
+  color: var(--primary-color);
+}
